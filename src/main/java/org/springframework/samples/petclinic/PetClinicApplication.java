@@ -28,12 +28,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication extends SpringBootServletInitializer {
 
-    @Override
+ @Override
  protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
          return app.sources(PetClinicApplication.class);
-     }
-	public static void main(String[] args) {
+}
+ public static void main(String[] args) {
 		SpringApplication.run(PetClinicApplication.class, args);
-	}
+}
 
 }
